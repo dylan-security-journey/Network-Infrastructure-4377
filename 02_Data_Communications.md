@@ -1,73 +1,102 @@
-DNS and WWW started in 1980s
+# Networking & Cloud Fundamentals
 
-Ethernet is protocol
-WWW collection of resources used by network protocols
+## 1. Historical Timeline
+- **1960s–70s**: **ARPANET** – early packet-switching network, precursor to the internet.  
+- **1980s–90s**:  
+  - **DNS (Domain Name System)** introduced.  
+  - **WWW (World Wide Web)** emerges – collection of resources accessed via network protocols.  
+  - Companies like **AOL, Yahoo, Google** shape the early internet era.  
+- **2000s**: Rise of cloud service providers – **AWS, GCP (Google Cloud Platform), Azure**.
 
-60-70s: ARPANET
-80s-90s-DNS, WWW, AOL, Yahoo, Google
-2000s: AWS, GCP, AZURE
+---
 
-Domain Name Service: DNS 
+## 2. Key Concepts & Services
+- **DNS (Domain Name System)**: Maps domain names to IP addresses.  
+- **WWW (World Wide Web)**: Collection of resources accessible through network protocols.  
+- **Cloud Computing**: Renting services (servers, storage, infrastructure) from providers instead of maintaining in-house infrastructure.  
+  - Shared space in the cloud → security risks.  
+  - Many companies move sensitive data **back on-premise**.  
+  - **Hybrid model**: Cloud for some apps, on-premise for critical data.  
+- **Infrastructure (Data Center Components)**:  
+  - Servers  
+  - Switches  
+  - Storage  
 
-Renting out huge companies services so you don't need in-house infrastructure
+---
 
-Sharing space in cloud, not secure on cloud
+## 3. Networking Basics
+- **Protocols** = Standard communication languages between systems.  
+- **Ethernet** = Protocol for wired networking.  
 
-Lots of companies bringing data to on-premise
+### Network Types
+- **LAN (Local Area Network)**: Small scale (e.g., one office).  
+- **MAN (Metropolitan Area Network)**: Connects multiple buildings across a city.  
+- **WAN (Wide Area Network)**: Global connectivity beyond premises.  
 
-hybrid model for some applications to be on cloud while crucial data on-prem
+### Topologies (physical & logical layout)
+- **Point-to-Point**: Direct connection between two devices.  
+- **Ring**: Devices connected in a loop.  
+- **Star**: All devices connect to a central switch (isolates failures).  
+- **Mesh**: Multiple interconnections, reliable but expensive.  
+- **Bus**: Shared backbone with terminators at each end.  
+- **Tree**: Hierarchical layout.  
 
-Infrastructure: Servers, Switches, Storage (Data center)
+---
 
-GCP = google cloud platform
+## 4. Intranet vs Extranet
+- **Intranet**: Internal network for employees only.  
+- **Extranet**: Controlled access for external partners or vendors.  
 
-Quantum computing: solving task that would take years in a short span of time
+---
 
-Standard language system = protocols (communication)
+## 5. OSI vs TCP/IP Models
 
-LAN: Local Area Network: One office, one rage (backbone network)
+### OSI Model (7 Layers) – *theoretical, mainly for teaching*
+1. **Physical** – electrical signals, cabling.  
+2. **Data Link** – switches, framing, error detection.  
+3. **Network** – addressing, routing (IP).  
+4. **Transport** – QoS, reliability (TCP/UDP).  
+5. **Session** – maintains sessions between apps.  
+6. **Presentation** – encryption, data formatting.  
+7. **Application** – user-facing apps (HTTP, email).  
 
-MAN: Metropolitan Area Network: Two building's network connected together
+> Mnemonic: **Please Do Not Tell Secret Passwords to Anyone**
 
-WAN: Wide Area Network: Leaving premises and enables global operation network
+### TCP/IP Model (4 Layers) – *practical, widely used today*
+1. **Network Access**  
+2. **Internet**  
+3. **Transport**  
+4. **Application**
 
-Topologies describe how devices on a network are related physically and logically (how fast, why, type of firm)
+---
 
-When cables break in topology, connection is lost (Star topology helps isolate connection loss)
+## 6. Protocols
 
-Examples: Point-to-Point, Ring, Star (connected with a switch), Mesh (Expensive/Complicated/(24/7 availability)), Bus (Terminators end path), Tree
+### TCP (Transmission Control Protocol)
+- Connection-oriented.  
+- Examples: **Telnet, SSH, HTTP**  
 
-Intranet: Only business people connect to each other
+### UDP (User Datagram Protocol)
+- Connectionless.  
+- Examples: **DNS, SNMP, NTP**  
 
-Extranet: specific people from outside organization have access to your network
+### Security & Devices
+- **Transport Layer**: Port security, firewalls.  
+- **Data Link Layer**: Switches.  
 
-OSI Model: Open Systems Interconnect Model (7 layered model) theoretical model (Europe usage)
+---
 
-TCP/IP Model: separed networking functions into discrete layers (mostly used)
+## 7. Encryption
+Data can be encrypted at multiple layers:  
+- **Presentation layer**: SSL/TLS (data formatting & encryption).  
+- **Application layer**: HTTPS, encrypted apps.  
+- **Transport layer**: Secure connections (TLS over TCP).  
+- **Network layer**: VPNs, IPsec.  
 
-OSI Layers: Application, Presentation, Session, Transport, Network, Data Link, Physical
+---
 
-Analogy: Please Do Not tell secret password Anyone
-
-TCP/IP Model: Application, Transport, Internet, Network Access
-
-Physical (electrical signal), Data Link (get required info to move), Network (Leave premises to one place to another), Transport (controlling quality of service), Session (ensure connection), Presentation (encryption), Application (UI experience)
-
-Application, Transport, Internet, Network Access
-
-TCP: Telnet/SSH, HTTO
-
-UDP: DNS, SNMP, NTP
-
-Transport: port security, firewalls
-
-Data Link: Switches
-
-How is data encrypted in every single layer
-
-TCP: connection oriented
-
-UDP: connection-less oriented
+## 8. Advanced Concepts
+- **Quantum Computing**: Performs complex calculations in seconds that would take classical computers years.  
 
 
 
