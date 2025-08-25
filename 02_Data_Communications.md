@@ -41,9 +41,36 @@ Intranet: Only business people connect to each other
 
 Extranet: specific people from outside organization have access to your network
 
-OSI Model: Open Systems Interconnect Model (7 layered model)
+OSI Model: Open Systems Interconnect Model (7 layered model) theoretical model (Europe usage)
 
-TCP/IP Model: separed networking functions into discrete layers
+TCP/IP Model: separed networking functions into discrete layers (mostly used)
+
+OSI Layers: Application, Presentation, Session, Transport, Network, Data Link, Physical
+
+Analogy: Please Do Not tell secret password Anyone
+
+TCP/IP Model: Application, Transport, Internet, Network Access
+
+Physical (electrical signal), Data Link (get required info to move), Network (Leave premises to one place to another), Transport (controlling quality of service), Session (ensure connection), Presentation (encryption), Application (UI experience)
+
+Application, Transport, Internet, Network Access
+
+TCP: Telnet/SSH, HTTO
+
+UDP: DNS, SNMP, NTP
+
+Transport: port security, firewalls
+
+Data Link: Switches
+
+How is data encrypted in every single layer
+
+TCP: connection oriented
+
+UDP: connection-less oriented
+
+
+
 
 
 
