@@ -98,6 +98,77 @@ Data can be encrypted at multiple layers:
 ## 8. Advanced Concepts
 - **Quantum Computing**: Performs complex calculations in seconds that would take classical computers years.  
 
+Source destination is where sender sends information to reciever 
+
+Post-Covid lots of business moved to e-commerce 
+
+Network is connection of two or more devices
+
+(OS) Operating System is hardware, IP Address assigned to machine
+
+1) Store and retrieve data 2) Analyze and visualize data 3) Automating data 4) protecting data
+
+Bare metal offers high control and flexibility
+
+Servers used to store data or software that can be accessed to clients (rack mounted servers)
+
+Hypervisor (software) used to virtualize the resources on the server
+
+A circuit is pathway through which messages travel
+
+8 bits become 1 byte
+
+A network without a server is known as peer-to-peer network
+
+(ipconfig) on command prompt helps understand current IP address
+
+you can ping your own IP for troubleshooting purposes
+
+ifconfig is for linux command
+
+You can't use linux commands on command prompt directly
+
+Access layer is connected to a router (LAN) then connected to a switch
+
+All switches will be connected to a backbone network (Main Switch)
+
+Backbone or core network connects to ISP (Internet Service Provider), datacenter, cloud
+
+File server stores data and software
+
+web server stores documents and graphics from web browser
+
+mail server handles and delivers emails over network
+
+You can designate multiple file and web on a single server but can create connectivity issues
+
+OSI model produced in 1984 (Open Systems Interconnection) by ISO (Organization for Standardization)
+
+Application layer is where you interact (Google) (Software Usage)
+
+Presentation layer is information that is encrypted and translator between applications 
+
+Session layer is to establish a session between users
+
+Transport layer is responsible for port controlling destination (process-to-process) (TCP), incorporates header
+
+UDP is used for streaming 
+
+Port 443 is used for HTTPS
+
+Network layer performs the routing or safest path to take for sender to reciever 
+
+Some switches are plug/play or managed switches
+
+Data Link layer is responsible for reliable data transfer (from computer to switch), checks physical connection
+
+Physical layer is data transfer over physical wires (electrical signals)
+
+NIC-Card information is specific to each individual device
+
+
+
+
 
 
 
