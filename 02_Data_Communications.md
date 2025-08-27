@@ -1,68 +1,84 @@
 # Networking & Cloud Fundamentals
 
+---
+
 ## 1. Historical Timeline
 - **1960s–70s**: **ARPANET** – early packet-switching network, precursor to the internet.  
 - **1980s–90s**:  
   - **DNS (Domain Name System)** introduced.  
   - **WWW (World Wide Web)** emerges – collection of resources accessed via network protocols.  
   - Companies like **AOL, Yahoo, Google** shape the early internet era.  
-- **2000s**: Rise of cloud service providers – **AWS, GCP (Google Cloud Platform), Azure**.
+- **2000s**: Rise of cloud service providers – **AWS, GCP (Google Cloud Platform), Azure**.  
+- **Post-COVID Era**: Many businesses shifted to **e-commerce**.  
 
 ---
 
 ## 2. Key Concepts & Services
+- **Network**: A connection of two or more devices.  
+- **Source → Destination**: Sender transmits information to a receiver.  
+- **Operating System (OS)**: Interfaces hardware; each machine is assigned an **IP address**.  
 - **DNS (Domain Name System)**: Maps domain names to IP addresses.  
-- **WWW (World Wide Web)**: Collection of resources accessible through network protocols.  
-- **Cloud Computing**: Renting services (servers, storage, infrastructure) from providers instead of maintaining in-house infrastructure.  
-  - Shared space in the cloud → security risks.  
-  - Many companies move sensitive data **back on-premise**.  
-  - **Hybrid model**: Cloud for some apps, on-premise for critical data.  
-- **Infrastructure (Data Center Components)**:  
-  - Servers  
-  - Switches  
-  - Storage  
+- **WWW (World Wide Web)**: Collection of resources accessible via protocols.  
+- **Cloud Computing**: Renting services (servers, storage, infrastructure) from providers.  
+  - Shared cloud introduces **security risks**.  
+  - Many firms keep critical data **on-premise**.  
+  - **Hybrid model**: Mix of cloud + on-premise.  
+- **Bare Metal Servers**: Offer high control and flexibility.  
+- **Hypervisor**: Virtualization software to allocate resources on a server.  
+- **Circuit**: Pathway through which messages travel.  
+
+### Infrastructure Components
+- **Servers** (rack-mounted, file/web/mail servers).  
+- **Switches** (connect devices within LANs).  
+- **Storage systems** (databases, SAN/NAS).  
 
 ---
 
 ## 3. Networking Basics
-- **Protocols** = Standard communication languages between systems.  
+- **Protocols** = Standard communication rules.  
 - **Ethernet** = Protocol for wired networking.  
+- **Bits & Bytes**: 8 bits = 1 byte.  
+- **NIC (Network Interface Card)**: Hardware-specific identifier for each device.  
 
 ### Network Types
-- **LAN (Local Area Network)**: Small scale (e.g., one office).  
-- **MAN (Metropolitan Area Network)**: Connects multiple buildings across a city.  
-- **WAN (Wide Area Network)**: Global connectivity beyond premises.  
+- **LAN (Local Area Network)**: One office or small area.  
+- **MAN (Metropolitan Area Network)**: Connects buildings in a city.  
+- **WAN (Wide Area Network)**: Large/global connectivity.  
 
-### Topologies (physical & logical layout)
-- **Point-to-Point**: Direct connection between two devices.  
+### Network Topologies
+- **Point-to-Point**: Direct device-to-device link.  
 - **Ring**: Devices connected in a loop.  
-- **Star**: All devices connect to a central switch (isolates failures).  
-- **Mesh**: Multiple interconnections, reliable but expensive.  
-- **Bus**: Shared backbone with terminators at each end.  
-- **Tree**: Hierarchical layout.  
+- **Star**: Devices connect to central switch (fault isolation).  
+- **Mesh**: Redundant interconnections (reliable, expensive).  
+- **Bus**: Shared backbone with terminators.  
+- **Tree**: Hierarchical structure.  
+
+### Peer-to-Peer vs Client-Server
+- **Peer-to-Peer**: No central server, devices share resources directly.  
+- **Client-Server**: Centralized servers store/manage resources.  
 
 ---
 
 ## 4. Intranet vs Extranet
-- **Intranet**: Internal network for employees only.  
-- **Extranet**: Controlled access for external partners or vendors.  
+- **Intranet**: Internal employee-only access.  
+- **Extranet**: Limited external access for partners/vendors.  
 
 ---
 
 ## 5. OSI vs TCP/IP Models
 
-### OSI Model (7 Layers) – *theoretical, mainly for teaching*
+### OSI Model (7 Layers, ISO 1984)
 1. **Physical** – electrical signals, cabling.  
-2. **Data Link** – switches, framing, error detection.  
-3. **Network** – addressing, routing (IP).  
-4. **Transport** – QoS, reliability (TCP/UDP).  
-5. **Session** – maintains sessions between apps.  
-6. **Presentation** – encryption, data formatting.  
-7. **Application** – user-facing apps (HTTP, email).  
+2. **Data Link** – reliable transfer, MAC addressing, error detection.  
+3. **Network** – routing, addressing (IP).  
+4. **Transport** – port control, reliability (TCP/UDP).  
+5. **Session** – establishes/maintains communication sessions.  
+6. **Presentation** – encryption, data translation.  
+7. **Application** – software interfaces (HTTP, email, Google, etc.).  
 
 > Mnemonic: **Please Do Not Tell Secret Passwords to Anyone**
 
-### TCP/IP Model (4 Layers) – *practical, widely used today*
+### TCP/IP Model (4 Layers, practical use)
 1. **Network Access**  
 2. **Internet**  
 3. **Transport**  
@@ -71,101 +87,62 @@
 ---
 
 ## 6. Protocols
-
 ### TCP (Transmission Control Protocol)
-- Connection-oriented.  
-- Examples: **Telnet, SSH, HTTP**  
+- Connection-oriented, reliable.  
+- Examples: **Telnet, SSH, HTTP, HTTPS**.  
 
 ### UDP (User Datagram Protocol)
-- Connectionless.  
-- Examples: **DNS, SNMP, NTP**  
+- Connectionless, faster, no guarantee.  
+- Examples: **DNS, SNMP, NTP, streaming**.  
 
-### Security & Devices
-- **Transport Layer**: Port security, firewalls.  
-- **Data Link Layer**: Switches.  
-
----
-
-## 7. Encryption
-Data can be encrypted at multiple layers:  
-- **Presentation layer**: SSL/TLS (data formatting & encryption).  
-- **Application layer**: HTTPS, encrypted apps.  
-- **Transport layer**: Secure connections (TLS over TCP).  
-- **Network layer**: VPNs, IPsec.  
+### Ports
+- **Port 443** = HTTPS (secure web).  
 
 ---
 
-## 8. Advanced Concepts
-- **Quantum Computing**: Performs complex calculations in seconds that would take classical computers years.  
+## 7. Security & Devices
+- **Transport Layer**: Port filtering, firewalls.  
+- **Data Link Layer**: Switches ensure reliable transfer.  
+- **Access Layer**: End devices connect to routers/switches.  
+- **Backbone/Core Network**: Main switches interconnect LANs, link to ISP/datacenter/cloud.  
+- **Switches**: Can be unmanaged (plug-and-play) or managed.  
 
-Source destination is where sender sends information to reciever 
+---
 
-Post-Covid lots of business moved to e-commerce 
+## 8. Encryption
+Data can be encrypted at multiple layers:
+- **Presentation Layer**: SSL/TLS.  
+- **Application Layer**: HTTPS, encrypted apps.  
+- **Transport Layer**: TLS over TCP.  
+- **Network Layer**: VPNs, IPsec.  
 
-Network is connection of two or more devices
+---
 
-(OS) Operating System is hardware, IP Address assigned to machine
+## 9. Server Types
+- **File Server**: Stores data/software.  
+- **Web Server**: Hosts documents, media for browsers.  
+- **Mail Server**: Sends/receives emails.  
+> Note: Multiple server roles can exist on one machine, but this may cause connectivity issues.  
 
-1) Store and retrieve data 2) Analyze and visualize data 3) Automating data 4) protecting data
+---
 
-Bare metal offers high control and flexibility
+## 10. Commands & Tools
+- **Windows**:  
+  - `ipconfig` → view IP configuration.  
+  - `ping` → test connectivity (even to own IP).  
+- **Linux/Unix**:  
+  - `ifconfig` → view IP/network config.  
+- Note: Linux commands cannot be run directly in Windows CMD.  
 
-Servers used to store data or software that can be accessed to clients (rack mounted servers)
+---
 
-Hypervisor (software) used to virtualize the resources on the server
-
-A circuit is pathway through which messages travel
-
-8 bits become 1 byte
-
-A network without a server is known as peer-to-peer network
-
-(ipconfig) on command prompt helps understand current IP address
-
-you can ping your own IP for troubleshooting purposes
-
-ifconfig is for linux command
-
-You can't use linux commands on command prompt directly
-
-Access layer is connected to a router (LAN) then connected to a switch
-
-All switches will be connected to a backbone network (Main Switch)
-
-Backbone or core network connects to ISP (Internet Service Provider), datacenter, cloud
-
-File server stores data and software
-
-web server stores documents and graphics from web browser
-
-mail server handles and delivers emails over network
-
-You can designate multiple file and web on a single server but can create connectivity issues
-
-OSI model produced in 1984 (Open Systems Interconnection) by ISO (Organization for Standardization)
-
-Application layer is where you interact (Google) (Software Usage)
-
-Presentation layer is information that is encrypted and translator between applications 
-
-Session layer is to establish a session between users
-
-Transport layer is responsible for port controlling destination (process-to-process) (TCP), incorporates header
-
-UDP is used for streaming 
-
-Port 443 is used for HTTPS
-
-Network layer performs the routing or safest path to take for sender to reciever 
-
-Some switches are plug/play or managed switches
-
-Data Link layer is responsible for reliable data transfer (from computer to switch), checks physical connection
-
-Physical layer is data transfer over physical wires (electrical signals)
-
-NIC-Card information is specific to each individual device
-
+## 11. Advanced Concepts
+- **Quantum Computing**: Can solve problems in seconds that would take classical computers years.  
+- **Data Responsibilities**:  
+  1. Store & retrieve  
+  2. Analyze & visualize  
+  3. Automate  
+  4. Protect  
 
 
 
