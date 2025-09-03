@@ -144,6 +144,49 @@ Data can be encrypted at multiple layers:
   3. Automate  
   4. Protect  
 
+Internet model is most practical and has 5 layers (data is transformed between layers)
+-Application - HTTP request is trying to access web browser 
+-Transport - TCP of how much data can move and divide into segments
+-Network - IP of adding source of destination to and from (local ports on specific machine)
+-Data Link - Ethernet and make sure data is clear and read for transport
+-Physical  - 
+
+If NIC-Card disabled can't access the internet,
+
+computer > switch > router > switch > computer
+
+Network standards
+-De jure - formal standard - should be FDA approved
+-De facto - supported by several vendors and has no official standings
+
+Standard Making Organizations
+-ISO
+-IEEE
+-IETF
+
+When assigning IP to router it becomes Default Gateway
+
+When you ping your IP, you'll see you're computer is online or offline
+
+nslookup can help find IP of the server
+
+systeminfo command helps find OS details
+
+advance port scanner will show you all the open ports and you can diagnose which ports to close
+
+Wireshark is the tracking of packets of the OSI model
+
+Application Architectures
+-Two parts to an application front-end and back-end
+-Data storage, Data access logic (required to access logic, delete, access, retrieve), Application logic (business logic, how many areas need access), Presentation logic (how end-user uses that data), Services logic (how you enable and disable applications
+
+Host-Based Architecture: simple (mainframe), server performs all task
+
+Client-based Architecture: personal computers on LAN, problem is all data on server must travel to client
+
+Middleware: software use to communicate between client and server, standard  way of communicating (CORBA or DCDE standards)
+
+
 
 
 
