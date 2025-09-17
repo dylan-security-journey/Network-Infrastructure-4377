@@ -42,6 +42,43 @@ Modulate and Demodualate in frequency divisions multiplexing
 
 Digital Signals (form of 0s and 1s)
 
+Analog transmission involves continuous waves
+
+Parallel transmission for multiple bits at the same time 
+
+Serial transmission are transferred sequentially
+
+asynchronous clock-wise, syncronous transmission, start and stop bits
+
+Bipolar NRZ voltage is positive or negative, fewer errors than unipolar
+
+Modulator is a converter between analog and digital transmission
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
